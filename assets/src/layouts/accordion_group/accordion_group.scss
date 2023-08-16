@@ -1,0 +1,65 @@
+.accordion-group {
+    .accordion {
+        --padding-block-end: .5rem;
+
+        position: relative;
+        margin-bottom: 1.8rem;
+        border-radius: var(--border-radius);
+        background: var(--white);
+        padding: 3rem 3rem calc(3.6rem - var(--padding-block-end));
+
+        @media screen and (min-width: 900px) {
+            padding: 4rem 4rem calc(4rem - var(--padding-block-end));
+        }
+
+        &:last-child {
+            margin-block-end: 0;
+        }
+
+        .accordion-label {
+            // Enable/override pointer-events: none; from accordion.scss
+            pointer-events: auto;
+            cursor: pointer;
+
+            padding-block-end: var(--padding-block-end);
+
+            .drop-icon {
+                display: grid;
+            }
+
+            h3 {
+                margin-block-end: 0;
+                font-size: 3rem;
+                line-height: 108%;
+            }
+        }
+
+        .accordion-content {
+            display: grid;
+            row-gap: 3rem;
+
+            .card {
+                //--card-padding: 0;
+                //--card-padding: 1.6rem 0;
+
+                // Add some top padding so the card doesn't cover the accordion header
+                //&:first-child {
+                //    --card-padding: 3rem 0 0 0;
+                //}
+
+                //&:last-child {
+                //    --card-padding: 1.6rem 0 0 0;
+                //}
+            }
+        }
+
+        .content-part.has-white-background-color:not(.image-first) {
+            padding-inline-start: 0;
+        }
+
+        .content_w_image_card.has-white-background-color.image-first {
+            padding-inline: 0;
+        }
+
+    }
+}

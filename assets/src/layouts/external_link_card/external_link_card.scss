@@ -1,0 +1,93 @@
+@import '../../scss/utility/typography';
+
+.external_link_card {
+    --icon-width: 36px;
+    --icon-rotation: rotate(0deg);
+    --card-padding: 2.4rem 7rem 3rem 3rem;
+    --svg-circle: var(--white);
+    --svg-arrow: var(--primary-light);
+
+    &.has-primary-dark-background-color {
+        --svg-arrow: var(--primary-dark);
+    }
+
+    &.has-primary-medium-background-color {
+        --svg-arrow: var(--primary-medium);
+    }
+
+    &.has-primary-light-background-color {
+        --svg-arrow: var(--primary-light);
+    }
+
+    &.has-white-background-color {
+        --svg-circle: var(--text);
+        --svg-arrow: var(--white);
+    }
+
+    &.has-accent-background-color {
+        --svg-arrow: var(--accent);
+    }
+
+    @media screen and (min-width: 900px) {
+        --icon-width: 53px;
+        --icon-height: 66px;
+        --card-padding: 2.8rem 4rem 4rem 4rem;
+
+        &:hover {
+            --icon-rotation: rotate(20deg);
+        }
+    }
+
+    .card-heading {
+        margin-bottom: 0 !important;
+    }
+
+    &.large-heading {
+        --card-padding: 2.4rem 7rem 5rem 3rem;
+        @media screen and (min-width: 900px) {
+            --card-padding: 2.8rem 12.8rem 7rem 4rem;
+        }
+
+        .card-heading {
+            @extend .header-md;
+
+            @media screen and (min-width: 900px) {
+                font-size: 4.8rem;
+                padding-top: 0.5rem !important;
+            }
+        }
+    }
+
+    display: grid;
+    grid-template-columns: 1fr var(--icon-width);
+    gap: 4rem;
+    padding: var(--card-padding);
+    text-decoration: none !important;
+
+    .card-content {
+        padding-top: 3.5rem;
+    }
+
+    .card-link-icon {
+        height: var(--icon-width); // this prevents rolling effect if next line is commented out
+        height: var(--icon-height); // comment this out to remove the rolling effect
+        width: var(--icon-width);
+        transform: var(--icon-rotation);
+        transition: all 0.2s ease-in-out;
+
+        svg {
+            position: relative;
+            display: block;
+            max-width: 100%;
+            height: auto;
+
+            rect {
+                fill: var(--svg-circle);
+            }
+
+            path {
+                fill: var(--svg-arrow);
+            }
+        }
+    }
+}

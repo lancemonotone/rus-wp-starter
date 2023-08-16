@@ -1,0 +1,26 @@
+@import '../../scss/utility/typography';
+
+.intro-text-inner {
+    position: relative;
+    max-width: 850px;
+
+    .kicker {
+        position: relative;
+        margin: 0 0 1.2rem;
+        @media screen and (min-width: 900px) {
+            margin: 0 0 1.6rem;
+        }
+    }
+
+    .intro-text-title {
+        max-width: 800px;
+    }
+
+    .content-inner-wrap {
+        position: relative;
+
+        p:not(.body-serif) {
+            @extend .body-serif-lg;
+        }
+    }
+}

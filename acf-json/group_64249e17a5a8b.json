@@ -1,0 +1,197 @@
+{
+    "key": "group_64249e17a5a8b",
+    "title": "Global Module Practice Areas Image Grid",
+    "fields": [
+        {
+            "key": "field_6425ef078e777",
+            "label": "Section Header",
+            "name": "section_header",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6425ef238e778",
+            "label": "Button Link",
+            "name": "button_link",
+            "aria-label": "",
+            "type": "page_link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": "",
+            "allow_archives": 0,
+            "multiple": 0,
+            "allow_null": 0
+        },
+        {
+            "key": "field_6425ef378e779",
+            "label": "Button Text",
+            "name": "button_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64249e1860347",
+            "label": "Practice Areas",
+            "name": "practice_areas",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Practice Areas",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6424a0ae60348",
+                    "label": "Image",
+                    "name": "image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "post-thumbnail",
+                    "parent_repeater": "field_64249e1860347"
+                },
+                {
+                    "key": "field_6424a0d260349",
+                    "label": "Select Practice Area",
+                    "name": "select_practice_area",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "8977": "Auto Accident",
+                        "99": "Bankruptcy",
+                        "154": "Big Truck Accident",
+                        "109": "Defective Product",
+                        "131": "Drug Injury",
+                        "7438": "Equipment Accident",
+                        "13335": "Marine Corps Base Camp Lejeune Drinking Water Contamination",
+                        "9709": "Motorcycle Accident",
+                        "9180": "Negligent Security",
+                        "149": "Nursing Home Abuse",
+                        "9133": "Sex Trafficking",
+                        "152": "Social Security Disability",
+                        "159": "Workers' Compensation",
+                        "160": "Wrongful Death"
+                    },
+                    "default_value": false,
+                    "return_format": "array",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_64249e1860347"
+                },
+                {
+                    "key": "field_642596faed237",
+                    "label": "Practice Area Blurb",
+                    "name": "practice_area_blurb",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_64249e1860347"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1684939000
+}

@@ -1,0 +1,130 @@
+{
+    "key": "group_643595065c072",
+    "title": "Module Page Children",
+    "fields": [
+        {
+            "key": "field_64359508ca589",
+            "label": "Choose Parent Page",
+            "name": "select_practice_area_parents",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "6": "About Us",
+                "8977": "Auto Accident",
+                "11003": "Auto Accident",
+                "99": "Bankruptcy",
+                "154": "Big Truck Accident",
+                "8872": "Causes",
+                "10348": "Common Injuries",
+                "12": "Community",
+                "109": "Defective Product",
+                "131": "Drug Injury",
+                "7438": "Equipment Accident",
+                "80": "Locations",
+                "10944": "Memphis",
+                "9709": "Motorcycle Accident",
+                "149": "Nursing Home Abuse",
+                "10": "Practice Areas",
+                "7564": "Se habla español",
+                "13352": "Servicios Legales",
+                "152": "Social Security Disability",
+                "159": "Workers' Compensation",
+                "160": "Wrongful Death"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_643f11bd52140",
+            "label": "Hide Parent Page Title",
+            "name": "hide_parent_title",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_6435ae0f41399",
+            "label": "One Column",
+            "name": "one_column",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_6435a9d5b3c56",
+            "label": "Content",
+            "name": "content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1684939000
+}

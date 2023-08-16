@@ -1,0 +1,465 @@
+{
+    "key": "group_63de996e67b7e",
+    "title": "Module TOC Page",
+    "fields": [
+        {
+            "key": "acfcloneindex",
+            "label": "Page Title",
+            "name": "page_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_641891ec31c9c",
+            "label": "Hide Page Title",
+            "name": "hide_page_title",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "If the H2 TOC Page Title is hidden, it will need to be set in the first child module via the section title or in a WYSIWYG.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_63de99a6fe64c",
+            "label": "Sections",
+            "name": "section",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_642723ec31dbf": {
+                    "key": "layout_642723ec31dbf",
+                    "name": "attorneys",
+                    "label": "Attorneys Slider",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_642723f431dc1",
+                            "label": "Attorneys",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "The content for this module is managed in <a href=\"\/wp-admin\/admin.php?page=theme-options\" target=\"_blank\">Theme Options<\/a>.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63e188f72b163": {
+                    "key": "layout_63e188f72b163",
+                    "name": "callout_grid",
+                    "label": "Callout Grid",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63dead50c0999",
+                            "label": "Callout Grid",
+                            "name": "callout_grid",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_63dd61da8f5a2"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63de9bdfb98ff": {
+                    "key": "layout_63de9bdfb98ff",
+                    "name": "card_grid",
+                    "label": "Card Grid",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63de9be8b9901",
+                            "label": "Card Grid",
+                            "name": "card_grid",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_63de9c96d4e7e"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63e1893f2b168": {
+                    "key": "layout_63e1893f2b168",
+                    "name": "cta",
+                    "label": "CTA",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63deabeb83669",
+                            "label": "CTA",
+                            "name": "cta",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_63deaa6137947"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6412030c282c9": {
+                    "key": "layout_6412030c282c9",
+                    "name": "full_width_content",
+                    "label": "Full Width Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64120315282cb",
+                            "label": "Full Width Content",
+                            "name": "full_width_content",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_641497975c07a"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6426e8976851c": {
+                    "key": "layout_6426e8976851c",
+                    "name": "google_ratings",
+                    "label": "Google Ratings",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6426e8b16851e",
+                            "label": "Google Ratings",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "The content for this module is managed in <a href=\"\/wp-admin\/admin.php?page=theme-options\" target=\"_blank\">Theme Options<\/a>.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_64359eb77afd6": {
+                    "key": "layout_64359eb77afd6",
+                    "name": "practice_area_children",
+                    "label": "Page Children",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64359ec47afd8",
+                            "label": "Page Children",
+                            "name": "practice_area_children",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_643595065c072"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6425f417f561d": {
+                    "key": "layout_6425f417f561d",
+                    "name": "practice_areas_grid",
+                    "label": "Practice Areas Grid",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6425f420f561f",
+                            "label": "Practice Areas Grid",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "The content for this module is managed in <a href=\"\/wp-admin\/admin.php?page=theme-options\" target=\"_blank\">Theme Options<\/a>.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_643db7bd65a19",
+                            "label": "Hide Header",
+                            "name": "hide_header",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_643db7d365a1a",
+                            "label": "Hide Button",
+                            "name": "hide_button",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63e189142b166": {
+                    "key": "layout_63e189142b166",
+                    "name": "split_content",
+                    "label": "Split Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63deacf48366c",
+                            "label": "Split Content",
+                            "name": "split_content",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_63dbf0d766c3c"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6426f1452c7ee": {
+                    "key": "layout_6426f1452c7ee",
+                    "name": "three_box",
+                    "label": "Three Box",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6426f14c2c7f0",
+                            "label": "Three Box",
+                            "name": "three_box",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_6426ed452f080"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63de99abf3662": {
+                    "key": "layout_63de99abf3662",
+                    "name": "two_column_content",
+                    "label": "Two-Column Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63de9a49fe64d",
+                            "label": "Two-Column Content",
+                            "name": "two_column_content",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_63de9af7678bc"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Section"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1684939000
+}

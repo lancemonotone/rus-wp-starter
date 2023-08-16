@@ -1,0 +1,761 @@
+{
+    "key": "group_63e6700b14eed",
+    "title": "_Theme Options (saved)",
+    "fields": [
+        {
+            "key": "field_645905dbd5d49",
+            "label": "Footer",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_644c37ae8329e",
+            "label": "Office Locations (Footer)",
+            "name": "footer_office_locations",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_644c37c28329f",
+            "button_label": "Add Location",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_644c37c28329f",
+                    "label": "City",
+                    "name": "city",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_644c37ae8329e"
+                },
+                {
+                    "key": "field_644c3804832a2",
+                    "label": "Link",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "page_link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "page"
+                    ],
+                    "taxonomy": "",
+                    "allow_archives": 0,
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "parent_repeater": "field_644c37ae8329e"
+                },
+                {
+                    "key": "field_644c37cf832a0",
+                    "label": "Phone",
+                    "name": "phone",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_644c37ae8329e"
+                },
+                {
+                    "key": "field_644c37df832a1",
+                    "label": "Address",
+                    "name": "address",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_644c37ae8329e"
+                }
+            ]
+        },
+        {
+            "key": "field_644c305743019",
+            "label": "Footer Block 1",
+            "name": "footer_block_1",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_645909043bd46",
+            "label": "Footer Block 2",
+            "name": "footer_block_2",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_645909203bd47",
+            "label": "Footer Block 3",
+            "name": "footer_block_3",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_64590613d5d4a",
+            "label": "Shortcodes",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_642b1f0588dad",
+            "label": "Attorneys and Staff Shortcode [atts_and_staff]",
+            "name": "atts_and_staff",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "35+ attorneys and 150+ staff members",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_642c62e54f1ed",
+            "label": "Office Locations Shortcode [office_locations]",
+            "name": "office_locations",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "With eight offices in Arkansas and Tennessee – <a href=\"https:\/\/www.callrainwater.com\/locations\/little-rock-injury-lawyer\/\">Little Rock<\/a>, <a href=\"https:\/\/www.callrainwater.com\/locations\/little-rock-corporate-hill\/\">Little Rock-Corporate Hill<\/a>, <a href=\"https:\/\/www.callrainwater.com\/locations\/springdale-injury-lawyer\/\">Springdale<\/a>, <a href=\"https:\/\/www.callrainwater.com\/locations\/conway-injury-lawyer\/\">Conway<\/a>, <a href=\"https:\/\/www.callrainwater.com\/locations\/hot-springs-injury-lawyer\/\">Hot Springs<\/a>, <a href=\"https:\/\/www.callrainwater.com\/locations\/bryant\/\">Bryant<\/a>, <a href=\"https:\/\/www.callrainwater.com\/locations\/jacksonville-injury-lawyer\/\">Jacksonville<\/a>, and <a href=\"https:\/\/www.callrainwater.com\/memphis\/\">Memphis<\/a>",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_645906ef95d1a",
+            "label": "Stop",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
+        },
+        {
+            "key": "field_63e6700d69470",
+            "label": "Modules",
+            "name": "options",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_63e6704369471": {
+                    "key": "layout_63e6704369471",
+                    "name": "google_ratings",
+                    "label": "Google Ratings",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63e6704a69473",
+                            "label": "Google Ratings",
+                            "name": "google_ratings",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_63dd28982459d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63e6707669475": {
+                    "key": "layout_63e6707669475",
+                    "name": "logos",
+                    "label": "Awards Slider",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63e6708469477",
+                            "label": "Logos",
+                            "name": "logos",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_63e5180027087"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63ee63755c44f": {
+                    "key": "layout_63ee63755c44f",
+                    "name": "editor_header_color",
+                    "label": "Editor Header Color",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63ee684a90763",
+                            "label": "Instructions",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Change your header background and text color to make the editor page a little easier on the eyes.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_63ee67230f671",
+                            "label": "Editor Header Text Color",
+                            "name": "editor_header_text_color",
+                            "aria-label": "",
+                            "type": "editor_palette",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "white",
+                            "allowed_colors": [
+                                "black",
+                                "dark-gray",
+                                "white"
+                            ],
+                            "exclude_colors": "",
+                            "return_format": "color"
+                        },
+                        {
+                            "key": "field_63ee63795c451",
+                            "label": "Editor Header Background Color",
+                            "name": "editor_header_background_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "enable_opacity": 0,
+                            "return_format": "string"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_64077c2420f35": {
+                    "key": "layout_64077c2420f35",
+                    "name": "contact_forms",
+                    "label": "Contact Forms",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64078f573fe30",
+                            "label": "Forms",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_64077c2e20f37",
+                            "label": "Contact Forms",
+                            "name": "contact_forms",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "field_64077cdbeca06",
+                            "button_label": "Add Form",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_64077cdbeca06",
+                                    "label": "Form Title",
+                                    "name": "form_title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_64077c2e20f37"
+                                },
+                                {
+                                    "key": "field_6407b8d3c7f15",
+                                    "label": "Form ID",
+                                    "name": "form_id",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_64077c2e20f37"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_64078f613fe31",
+                            "label": "Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_6407ba1cc7f16",
+                            "label": "Portal ID",
+                            "name": "portal_id",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 4232346,
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_64078db7b8447",
+                            "label": "Script Tags",
+                            "name": "embed_script_tag",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/v2.js\"><\/script>\r\n\r\n<div id=\"form-{{formId}}\"><\/div>\r\n\r\n<script> hbspt.forms.create({ portalId: \"{{portalId}}\", formId: \"{{formId}}\", target: '#form-{{formId}}' }); <\/script>\r\n\r\n<div class=\"ie-hbspt-deprecated-message\"><\/div>\r\n\r\n<script>\r\n    var isIE = \"\";\r\n    \r\n    if (document.body.style.msTouchAction !== undefined) {\r\n        isIE = \"10\";\r\n    } else if (document.body.style.msTextCombineHorizontal !== undefined) {\r\n        isIE = \"11\";\r\n    }\r\n    \r\n    if (isIE) {\r\n        var messages = document.getElementsByTagName(\"div\");\r\n        for (var i = 0; i < messages.length; i++) {\r\n            var a = messages[i];\r\n            if (a.className === \"ie-hbspt-deprecated-message\" && !a.innerHTML) {\r\n                a.innerHTML = \"<em>This form is not supported by Internet Explorer, which was deprecated in June 2022. Please use a different browser to access our contact form.<\/em>\";\r\n            }\r\n        }\r\n    }\r\n<\/script>",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_640ba01792733": {
+                    "key": "layout_640ba01792733",
+                    "name": "callout_grid",
+                    "label": "Global Callout Grid",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_640ba06b92735",
+                            "label": "Callout Grid",
+                            "name": "callout_grid",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_63dd622825d78",
+                                "field_63dd62e125d7b",
+                                "field_63e3aeeabf0c7",
+                                "field_63dd635f25d7c",
+                                "field_63dd88d89962d",
+                                "field_63e154b89bcbe",
+                                "field_63e154cb9bcbf",
+                                "field_63dd69198ded5"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_64137f75b6ca5": {
+                    "key": "layout_64137f75b6ca5",
+                    "name": "partners_image",
+                    "label": "Partners Image",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64137f81b6ca7",
+                            "label": "Partners Image",
+                            "name": "partners_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_64247c7a1adfc": {
+                    "key": "layout_64247c7a1adfc",
+                    "name": "practice_areas",
+                    "label": "Practice Areas Image Grid",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64247c841adfe",
+                            "label": "Practice Areas",
+                            "name": "practice_areas",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_64249e17a5a8b"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_642722db93fdd": {
+                    "key": "layout_642722db93fdd",
+                    "name": "attorneys",
+                    "label": "Attorneys Slider",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_642722ed93fdf",
+                            "label": "Attorneys",
+                            "name": "attorneys",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_64272251c90d6"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_64515989aa9a2": {
+                    "key": "layout_64515989aa9a2",
+                    "name": "case_alerts",
+                    "label": "Case Alerts",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64515990aa9a4",
+                            "label": "Case Alerts",
+                            "name": "case_alerts",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_645156914012b"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Option"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1688046327
+}

@@ -1,0 +1,221 @@
+@import "../mixins/buttons";
+
+.card-buttons {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+
+    //&.stacked {
+    //}
+
+    &.inline {
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+            white-space: nowrap;
+        }
+    }
+}
+
+.button {
+    @include button;
+
+    //@media screen and (min-width: 768px) {
+    //    & + .button {
+    //        margin-inline-start: 1.6rem;
+    //    }
+    //
+    //    br + & {
+    //        margin-block-start: 1.6rem;
+    //    }
+    //}
+
+    &.arrow {
+        color: var(--text);
+        width: fit-content;
+        display: grid;
+        grid-template-columns: 2.4rem auto;
+        align-items: center;
+        justify-self: start;
+        margin-block-start: 1.6rem;
+        margin-inline: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 1.6rem;
+            height: 1.6rem;
+            margin-inline-end: .8rem;
+            justify-self: end;
+            transition: margin-inline-end var(--transition);
+            background: url("../images/arr.svg") no-repeat center center;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: var(--text);
+
+            &:before {
+                margin-inline-end: 0;
+            }
+        }
+    }
+
+    &.slide {
+        background-color: var(--text);
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: clamp(1.8rem, 3vw, 2.4rem);
+        padding-inline: clamp(2.4rem, 3vw, 6rem);
+        margin-inline: 0;
+        border: 2px solid var(--text);
+        position: relative;
+        overflow: hidden;
+        transition: all var(--transition);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 101%;
+            background: var(--accent);
+            transform: translate(-115%) skew(-20deg);
+            transition: transform var(--transition);
+            z-index: -1;
+        }
+
+        &:hover {
+            background-color: var(--text);
+            color: var(--text);
+
+            &::before {
+                transform: translate(-5%) skew(-20deg);
+            }
+        }
+
+        &.outlined {
+            background-color: var(--background);
+            color: var(--text);
+        }
+
+        svg {
+            display: none;
+        }
+    }
+}
+
+.large-button {
+    @include button;
+
+    padding: 0.7rem 2.6rem 1.1rem;
+    background: var(--text);
+    color: var(--white);
+    font-weight: 400;
+    font-size: 2.4rem;
+    transition: all var(--transition);
+
+    .dropdown-icon {
+        position: relative;
+        display: inline-block;
+        width: 23px;
+        height: 17px;
+        margin-left: 1.3rem;
+        transform: translateY(-1px);
+
+        .line {
+            position: absolute;
+            display: block;
+            width: 23px;
+            height: 3px;
+            left: 0;
+            top: 0;
+            background: var(--gray-mid);
+            opacity: 1;
+            transition: all var(--transition);
+        }
+
+        .line2 {
+            top: 7px;
+        }
+
+        .line3 {
+            top: 14px;
+        }
+    }
+
+    &:hover {
+        background: var(--white);
+        color: var(--text);
+        border-color: var(--text);
+
+        .dropdown-icon {
+            .line {
+                background: var(--text);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .large-button {
+        padding: .7rem 1.8rem 0.9rem;
+
+        .button-text {
+            display: none;
+        }
+
+        .dropdown-icon {
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .large-button {
+        padding: .5rem 1.3rem .7rem;
+    }
+}
+
+body.primary-navigation-open {
+    .large-button {
+        background: var(--white);
+        color: var(--text);
+        border-color: var(--text);
+
+        .dropdown-icon {
+            .line {
+                background: var(--text);
+            }
+
+            .line2 {
+                opacity: 0;
+            }
+
+            .line1 {
+                transform: rotate(45deg);
+                top: 7px;
+            }
+
+            .line3 {
+                transform: rotate(-45deg);
+                top: 7px;
+            }
+        }
+
+        &:hover {
+            background: var(--text);
+            color: var(--white);
+
+            .dropdown-icon {
+                .line {
+                    background: var(--white);
+                }
+            }
+        }
+    }
+}

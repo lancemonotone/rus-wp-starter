@@ -1,0 +1,56 @@
+.theme-toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+
+    > span {
+        white-space: nowrap;
+    }
+
+    .theme-toggle {
+        appearance: none;
+        background: var(--gray-mid);
+        border: 1px solid var(--white);
+        height: 2.4rem;
+        border-radius: 2.2rem;
+        width: 5rem;
+        position: relative;
+        cursor: pointer;
+        transition: background var(--transition);
+
+        &::before {
+            content: "";
+            display: block;
+            width: 2rem;
+            background: #2B2B2B;
+            border-radius: 50%;
+            position: absolute;
+            transition: all var(--transition);
+            top: 50%;
+            left: var(--button-left-position);
+            transform: translateY(-50%);
+            aspect-ratio: 1/1;
+        }
+
+        &:hover,
+        &[data-state=high-contrast] {
+            background: var(--text);
+
+            &::before {
+                background: var(--white);
+            }
+        }
+
+        /*
+        &::after {
+            content: attr(data-state);
+            font-size: 0.9rem;
+            text-transform: capitalize;
+            display: block;
+            z-index: 1;
+            position: relative;
+        }
+        */
+    }
+}

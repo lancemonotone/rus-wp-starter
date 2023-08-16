@@ -1,0 +1,11 @@
+@import '../../scss/utility/typography';
+
+.full-width-content {
+    .inner > * {
+        max-width: var(--max-width-content);
+    }
+
+    p, li {
+        @extend .body-serif-lg;
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "key": "group_63ea564f5a0c1",
+    "title": "Module Blog Carousel",
+    "fields": [
+        {
+            "key": "field_63ea5758ea607",
+            "label": "Section Heading",
+            "name": "heading",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_63ea570aea606",
+            "label": "Choose Carousel Tags",
+            "name": "categories",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Select one or more items on Practice Areas child pages to show a carousel of pages\/posts that are tagged with your selection.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "auto-accident": "Auto Accident",
+                "bankruptcy": "Bankruptcy",
+                "big-truck-accident": "Big Truck Accident",
+                "brain-injury": "Brain Injury",
+                "defective-product": "Defective Product",
+                "drug-injury": "Drug Injury",
+                "equipment-accident": "Equipment Accident",
+                "motorcycle-accident": "Motorcycle Accident",
+                "negligent-security": "Negligent Security",
+                "nursing-home-abuse": "Nursing Home Abuse",
+                "personal-injury": "Personal Injury",
+                "sex-trafficking": "Sex Trafficking",
+                "slip-and-fall": "Slip and Fall",
+                "social-security-disability": "Social Security Disability",
+                "workers-compensation": "Workers' Compensation",
+                "wrongful-death": "Wrongful Death"
+            },
+            "default_value": [],
+            "return_format": "value",
+            "multiple": 1,
+            "allow_null": 0,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1684939000
+}

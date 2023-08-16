@@ -1,0 +1,33 @@
+.social-media-icon-wrapper {
+    position: relative;
+    display: flex;
+    gap: 1.8rem;
+
+    a {
+        position: relative;
+        display: block;
+        width: 3.3rem;
+        height: 3.3rem;
+        text-decoration: none;
+
+        &.facebook {
+            background: url(../images/icon-facebook.svg) no-repeat center;
+            background-size: contain;
+        }
+
+        &.twitter {
+            background: url(../images/icon-twitter.svg) no-repeat center;
+            background-size: contain;
+        }
+
+        &.instagram {
+            background: url(../images/icon-instagram.svg) no-repeat center;
+            background-size: contain;
+        }
+
+        &.linkedin {
+            background: url(../images/icon-linkedin.svg) no-repeat center;
+            background-size: contain;
+        }
+    }
+}

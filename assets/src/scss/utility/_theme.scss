@@ -1,0 +1,93 @@
+/*
+--COLOR KEY--
+--text: gray dark / almost black
+--background: gray light
+--white: white
+--primary-dark: blue dark
+--primary-medium: blue mid
+--primary-light: blue light
+--accent: orange
+*/
+
+$theme-colors: (
+    "text",
+    "background",
+    "background-dark",
+    "white",
+    "primary-dark",
+    "primary-medium",
+    "primary-light",
+    "accent",
+    "gray",
+    "gray-dark",
+    "gray-mid",
+);
+
+:root {
+    /* default theme */
+    --text: #121212;
+    --background: #E5E5E5;
+    --background-dark: #B3B3B3;
+    --white: #FFFFFF;
+    --primary-dark: #224C66;
+    --primary-medium: #286AA6;
+    --primary-light: #00A3DA;
+    --accent: #F15A2C;
+    --gray: #CACACA;
+    --gray-dark: #797979;
+    --gray-mid: #D9D9D9;
+
+    /* high contrast default theme */
+    --text-hc: #121212;
+    --background-hc: #E5E5E5;
+    --background-dark-hc: #B3B3B3;
+    --white-hc: #FFFFFF;
+    --primary-dark-hc: #121212;
+    --primary-medium-hc: #121212;
+    --primary-light-hc: #121212;
+    --accent-hc: #121212;
+    --gray-hc: #121212;
+    --gray-dark-hc: #FFFFFF;
+    --gray-mid-hc: #FFFFFF;
+
+    /* alternate theme */
+    --text-alt: #121212;
+    --background-alt: #E5E5E5;
+    --background-dark-alt: #B3B3B3;
+    --white-alt: #FFFFFF;
+    --primary-dark-alt: #224C66;
+    --primary-medium-alt: #286AA6;
+    --primary-light-alt: #00A3DA;
+    --accent-alt: #5df12c;
+    --gray-alt: #121212;
+    --gray-dark-alt: #FFFFFF;
+    --gray-mid-alt: #FFFFFF;
+
+    /* high contrast alternate theme */
+    /* NEED TO UPDATE THESE VALUES WHEN DESIGN IS DONE */
+    --text-alt-hc: #121212;
+    --background-alt-hc: #E5E5E5;
+    --background-dark-alt-hc: #B3B3B3;
+    --white-alt-hc: #FFFFFF;
+    --primary-dark-alt-hc: #121212;
+    --primary-medium-alt-hc: #121212;
+    --primary-light-alt-hc: #121212;
+    --accent-alt-hc: #0000ff;
+    --gray-alt-hc: #121212;
+    --gray-alt-dark-hc: #FFFFFF;
+    --gray-alt-mid-hc: #FFFFFF;
+}
+
+$body-states: (
+    "high-contrast": "hc",
+    "coloralt": "alt",
+    "coloralt.high-contrast": "alt-hc",
+);
+
+@each $state, $suffix in $body-states {
+    body.#{$state} {
+        @each $color in $theme-colors {
+            --#{$color}: var(--#{$color}-#{$suffix});
+        }
+    }
+}

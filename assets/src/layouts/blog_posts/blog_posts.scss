@@ -1,0 +1,191 @@
+.blog-posts {
+  & > .inner {
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 599px) {
+      padding-inline: 0;
+    }
+  }
+
+  .section-heading {
+    color: var(--accent);
+    padding-inline: 2rem;
+  }
+
+  .blog-post-container {
+    display: grid;
+  }
+
+  .blog-post {
+    display: grid;
+    grid-template-rows: 360px auto;
+
+    img {
+      height: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      display: block;
+      width: 100%;
+    }
+
+    img.placeholder {
+      object-fit: contain;
+      background: $accent;
+      padding: 7rem;
+    }
+
+    .inner {
+      padding-block-start: 1.6rem;
+      padding-inline: 1.6rem;
+      display: grid;
+      grid-template-rows: 5em 55px auto;
+    }
+
+    .post-title {
+      font-size: clamp(2.2rem, 3vw, 2.4rem);
+      padding-block: 0 !important;
+      color: var(--text);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .wysiwyg {
+      padding-block: 0;
+      margin-block-start: .8rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    @-moz-document url-prefix() {
+      .wysiwyg {
+        display: -moz-box;
+        -moz-box-orient: vertical;
+        -moz-line-clamp: 2;
+      }
+    }
+  }
+
+  .button.go-to-blog {
+    margin-block-start: 0;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .glider::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .glider {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .glider-track {
+    align-items: start;
+    @media screen and (min-width: 599px) {
+      gap: 1rem;
+    }
+  }
+
+  // Uncomment to use arrows instead of dots
+  .glider-nav {
+    margin-block-start: clamp(5rem, 3vw, 5rem);
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+
+    .glider-prev,
+    .glider-next {
+      position: unset;
+      display: grid;
+      place-content: center;
+      cursor: pointer;
+      padding: 1.6rem 3.2rem;
+
+      &:after {
+        content: " ";
+        width: 0;
+        height: 0;
+        border-style: inset;
+        border-width: 0 7.5px 15px 7.5px;
+        border-color: transparent transparent $accent transparent;
+        transform: rotate(90deg);
+        display: inline-block;
+        transition: all var(--transition);
+      }
+
+      &.disabled {
+        opacity: .5;
+
+        &:after {
+          border-color: transparent transparent $accent transparent;
+        }
+      }
+    }
+
+    .glider-prev {
+      &:after {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  // Uncomment to use dots instead of arrows
+  /*.glider-nav {
+    margin-block-start: clamp(2rem, 3vw, 3rem);
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+
+    .glider-prev,
+    .glider-next {
+      position: unset;
+      display: block;
+      cursor: pointer;
+      color: var(--accent);
+      border-radius: 999px;
+      background-color: var(--accent);
+      width: 12px;
+      height: 12px;
+      margin: 7px;
+
+      &.active {
+        opacity: 1;
+      }
+
+      &.disabled {
+        opacity: .3;
+      }
+    }
+  }*/
+
+
+  // NOT USED
+  /*.glider-dots {
+
+    .glider-dot {
+      opacity: .3;
+      background-color: var(--white);
+      margin-block-start: clamp(2rem, 3vw, 3rem);
+
+      &.active {
+        opacity: 1;
+        background-color: var(--accent);
+
+        &:only-child {
+          display: none;
+        }
+      }
+    }
+  }*/
+}

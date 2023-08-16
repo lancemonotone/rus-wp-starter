@@ -1,0 +1,95 @@
+{
+    "key": "group_5ab9863e332ee",
+    "title": "Module Primary Form",
+    "fields": [
+        {
+            "key": "field_5ab985cc89512",
+            "label": "Form Heading",
+            "name": "primary_form_heading",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "The heading of the form",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "We’re here to help.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ab985e889513",
+            "label": "Form",
+            "name": "primary_form",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "The Form embed code. Typically provided by HubSpot.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64079046e276b",
+                        "operator": "==empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<!--[if lte IE 8]>\r\n<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/v2-legacy.js\"><\/script>\r\n<![endif]-->\r\n<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/v2.js\"><\/script>\r\n<script>\r\n  hbspt.forms.create({\r\nportalId: \"4232346\",\r\nformId: \"0e0965c6-1594-411f-8899-d3193ac22390\",\r\ncss: \"\"\r\n});\r\n<\/script>",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_64079046e276b",
+            "label": "Select Form",
+            "name": "select_form",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "The forms for this module are managed in <a href=\"\/wp-admin\/admin.php?page=theme-options\" target=\"_blank\">Theme Options<\/a>.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": [],
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "Used with the Content w\/ Form page template types. Specify the form on the right of the page.",
+    "show_in_rest": 0,
+    "modified": 1684939000
+}

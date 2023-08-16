@@ -1,0 +1,242 @@
+{
+    "key": "group_64beaa2de5beb",
+    "title": "Module Accordion Group",
+    "fields": [
+        {
+            "key": "field_64beaa2de7d3f",
+            "label": "Content",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_64beaa2de7d44",
+            "label": "Section Header",
+            "name": "section_header",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_63de9c9727b9f",
+                        "operator": "==",
+                        "value": "show_section_header"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64beaa2de7d4a",
+            "label": "Cards",
+            "name": "accordion_cards",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_64da7a51e6ba2": {
+                    "key": "layout_64da7a51e6ba2",
+                    "name": "standard_card",
+                    "label": "Standard Card",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64da7a63e6ba4",
+                            "label": "Standard Card",
+                            "name": "standard_card",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_64da78a8803fc"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_64d502f625818": {
+                    "key": "layout_64d502f625818",
+                    "name": "split_full_card",
+                    "label": "Standard Split Card",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64d502f82581a",
+                            "label": "Split Full Card",
+                            "name": "split_full_card",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_64d503d7d93d6"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_64d64053041d8": {
+                    "key": "layout_64d64053041d8",
+                    "name": "content_w_image_card",
+                    "label": "Content with Image Card",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64d64064041db",
+                            "label": "Content with Image card",
+                            "name": "content_w_image_card",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_64d3ac74c4a21"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_64dba9b137c75": {
+                    "key": "layout_64dba9b137c75",
+                    "name": "two_column_group",
+                    "label": "Two Column Group",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64dba9b937c78",
+                            "label": "Two Column Group",
+                            "name": "two_column_group",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_64da71f724fcb"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Card"
+        },
+        {
+            "key": "field_64beaa2de7d4d",
+            "label": "Settings",
+            "name": "settings",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_638d8c26a9d82",
+                "field_63f000fc8b1ed",
+                "field_63926db9a46ac"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1692117512
+}

@@ -1,0 +1,213 @@
+#colophon {
+    position: relative;
+    background: var(--text);
+
+    .inner {
+        max-width: var(--max-width-site-wide);
+    }
+
+    .footer-top {
+        position: relative;
+        padding: 5rem 0;
+
+        p {
+            font-family: var(--sans-font);
+            color: var(--white);
+            font-size: 1.4rem;
+            line-height: 150%;
+            margin-bottom: 1rem;
+
+            a {
+               color: var(--white);
+
+               &:hover {
+                    color: var(--white);
+                    text-decoration: underline;
+               }
+            }
+        }
+    }
+
+    .site-name {
+        position: relative;
+        max-width: 17rem;
+        margin-bottom: 2rem;
+    }
+
+    .site-footer-description {
+        margin-bottom: 3rem;
+    }
+
+    .site-footer-extra {
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &.extra2 {
+            margin-top: 3rem;
+
+            @media screen and (min-width: 1040px) {
+                margin-top: 3.5rem;
+            }
+        }
+    }
+
+    .footer-cols {
+        position: relative;
+
+        .footer-col {
+            p, li>a {
+                // accessibility tool workaround as it sees the body background color not the footer
+                background-color: var(--text);
+            }
+        }
+
+        .footer-col:first-child {
+            margin-bottom: 5rem;
+            max-width: 67rem;
+        }
+    }
+
+    .footer-navigation {
+        position: relative;
+
+        ul {
+            position: relative;
+            display: block;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                display: block;
+                list-style: none;
+            }
+        }
+
+        .menu-wrapper-footer {
+            a {
+                display: block;
+                font-family: var(--sans-font);
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 170%;
+                color: var(--white);
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            &>li {
+                margin-bottom: 2.6rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &>a {
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    margin-bottom: .2rem;
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        position: relative;
+        padding: 3rem 0;
+        background: var(--white);
+    }
+
+    .footer-bottom-cols {
+        position: relative;
+
+        .footer-bottom-col:first-child {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .footer-bottom-cols {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .footer-bottom-col:first-child {
+                margin-bottom: 0;
+                max-width: none;
+            }
+        }
+
+        .footer-navigation {
+            .menu-wrapper-footer {
+                columns: 2;
+                max-width: 86rem;
+
+                li {
+                    -webkit-column-break-inside: avoid;
+                              page-break-inside: avoid;
+                                   break-inside: avoid;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1040px) {
+        .site-name {
+            max-width: 26rem;
+            margin-bottom: 3rem;
+        }
+
+        .site-footer-description {
+            margin-bottom: 3.5rem;
+            max-width: 33rem;
+        }
+
+        .footer-cols {
+            display: flex;
+            background: var(--text);
+
+            .footer-col {
+                width: 60%;
+                padding-top: 1.5rem;
+            }
+
+            .footer-col:first-child {
+                margin-bottom: 0;
+                max-width: none;
+                width: 40%;
+                padding-right: 10%;
+                padding-top: 0;
+            }
+        }
+
+        .footer-navigation {
+            .menu-wrapper-footer {
+                max-width: none;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1240px) {
+        .site-name {
+            max-width: 30.6rem;
+        }
+
+        .footer-cols {
+            .footer-col {
+                width: 50%;
+            }
+
+            .footer-col:first-child {
+                width: 50%;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.full-width-card {
+    --card-columns: 1fr;
+
+    &[class$="-background-color"] .card *:not(a) {
+        color: inherit !important;
+    }
+}
+
+.large-text-card {
+    .card-header,
+    .card-content {
+        max-width: 87rem;
+    }
+
+    .card-content {
+        padding: 0 0 1rem;
+        @media screen and (min-width: 900px) {
+            padding: 2rem 0 1.5rem;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        .card-body p {
+            font-size: 2rem;
+            line-height: 150%;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.glightbox-clean {
+    .gprev,
+    .gnext,
+    .gclose {
+        &:hover {
+            path {
+                fill: var(--accent);
+            }
+        }
+    }
+}
+
+.gslide-inline {
+    background: transparent !important;
+    border-radius: var(--border-radius) !important;
+    box-shadow: none;
+}
+
+.split_full_card.bio_card {
+    --image-grid-area: 1 / 1 / 1 / 1;
+    --content-grid-area: 1 / 1 / 1 / -1;
+    --content-padding: 4rem;
+    --card-button-hover: var(--accent);
+
+    &:not(.has-white-background-color) {
+        --card-button-hover: var(--white);
+    }
+
+    @media screen and (min-width: 768px) {
+        --image-grid-area: 1 / 1 / 1 / span 4;
+        --content-grid-area: 1 / 5 / 1 / -1;
+
+        .card-grid &,
+        .full-width-card & {
+            --content-padding: 4rem 2rem;
+        }
+
+        .no-image & {
+            --content-padding: 4rem;
+        }
+    }
+
+    .gslide-inline &.ginlined-content {
+        @media screen and (min-width: 768px) {
+            .bio_card {
+                --content-grid-area: 1 / 5 / 1 / -2;
+                --content-padding: 6rem 0 6rem 6rem;
+            }
+
+            .no-image {
+                --content-padding: 6rem;
+            }
+        }
+
+        max-height: 100%;
+        padding: 0;
+
+        .card {
+            background: var(--white);
+            box-shadow: 1px 2px 9px #000000a6;
+            height: 100%;
+        }
+
+        .content-part {
+            height: 100%;
+            overflow: hidden;
+            background: var(--white);
+        }
+
+        .card-body {
+            max-height: 80%;
+            height: 9999px;
+            overflow-y: auto;
+        }
+    }
+
+    .card-kicker {
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    .card-header h3 {
+        font-family: var(--sans-font);
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%; /* 33px */
+    }
+
+    .card-button {
+        margin-block-start: 6.8rem;
+
+        a {
+            display: inline-block;
+            //color: var(--text);
+            font-family: var(--sans-font);
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 110%; /* 22px */
+            text-transform: capitalize;
+            text-decoration: none;
+
+            &:hover {
+                color: var(--card-button-hover);
+                border-color: var(--card-button-hover);
+            }
+        }
+    }
+}
